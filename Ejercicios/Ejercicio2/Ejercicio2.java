@@ -18,6 +18,8 @@ public class Ejercicio2 {
             //! RUTA DE DONDE ESTA EL ARCHIVO
             BufferedReader br = new BufferedReader(new FileReader("./Ejercicios/Ejercicio1/primos.dat"));
             String line = "";
+            //! PARA LEER LA PRIMERA LÍNEA DEL ARCHIVO Y QUE NO NOS SALGA UNA LÍNEA EN BLANCO
+            line = br.readLine();
             //! MIENTRAS ES NULL HABRA LINEAS PARA LEER, EN ESTE CASO SERIAN LOS NUMEROS SEPARADOS POR , 
             while (line != null) {
                 System.out.println(line);

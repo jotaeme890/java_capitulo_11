@@ -3,12 +3,9 @@ package Ejercicios.Ejercicio6;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
 
 public class Buscador {
-    ArrayList<String> n = new ArrayList<>();
     private int cont;
-    private String orig1;
     private String palabra;
 
     public Buscador(String orig1, String palabra) throws Exception{
@@ -20,7 +17,6 @@ public class Buscador {
     }
 
     public void init(String orig1,String palabra){
-        this.orig1 = orig1;
         this.palabra = palabra;
         int i = 0;
 

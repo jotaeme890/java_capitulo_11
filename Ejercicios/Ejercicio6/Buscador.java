@@ -28,7 +28,7 @@ public class Buscador {
             while ((linea = br.readLine()) != null) {
                 //! MIENTRAS HAYA UNA OCURRENCIA DE LA PALABRA, SE VA A DEVOLVER EL VALOR Y SI NO LA HAY VA A DEVOLVER -1
                 while  ((i = linea.indexOf(palabra)) != -1)  {
-                    //! A LINEA SE LE DA EL VALOR DEL .substring(valor de i + longitud de la palabra + longitud de la linea)
+                    //! A LINEA SE LE DA EL VALOR DEL .substring(valor de i + longitud de la palabra Y longitud de la linea), ES DECIR LINEA EMPIEZA EN I+ LONGITUD DE PALABRA Y TERMINA EN LA LONGITUD DE LA LINEA
                     linea = linea.substring(i + palabra.length(), linea.length());
                     //! SE AUMENTA EL CONTADOR YA QUE SERIA OTRA PALABRA IGUAL
                     this.cont++;

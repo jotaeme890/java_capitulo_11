@@ -2,6 +2,7 @@ package Ejercicios.Ejercicio6;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class Buscador {
@@ -21,19 +22,31 @@ public class Buscador {
     public void init(String orig1,String palabra){
         this.orig1 = orig1;
         this.palabra = palabra;
+        int i = 0;
 
         try {
             BufferedReader br = new BufferedReader(new FileReader(orig1));
 
             String linea = "";
-
-            while (linea != null) {
-                if(n.contains(palabra)){
-                    
+            //! A LA LINEA SE LE DA EL VALOR DE LA LINEA LEIDA, Y MIENTRAS NO SE NULL HACE
+            while ((linea = br.readLine()) != null) {
+                //! MIENTRAS HAYA UNA OCURRENCIA DE LA PALABRA, SE VA A DEVOLVER EL VALOR Y SI NO LA HAY VA A DEVOLVER -1
+                while  ((i = linea.indexOf(palabra)) != -1)  {
+                    //! A LINEA SE LE DA EL VALOR DEL .substring(valor de i + longitud de la palabra + longitud de la linea)
+                    linea = linea.substring(i + palabra.length(), linea.length());
+                    //! SE AUMENTA EL CONTADOR YA QUE SERIA OTRA PALABRA IGUAL
+                    this.cont++;
                 }
             }
-        } catch (Exception e) {
-            // TODO: handle exception
+
+            br.close();
+        } catch (IOException ioe) {
+            System.err.println(ioe.getMessage());
         }
+    }
+
+    @Override
+    public String toString(){
+        return "La palabra " + this.palabra + " se repite: " + this.cont + " veces";
     }
 }

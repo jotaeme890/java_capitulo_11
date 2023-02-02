@@ -14,7 +14,12 @@ package Ejercicios.Ejercicio4;
 public class Ejercicio4 {
     public static void main(String[] args) {
         try {
-            Listar lm = new Listar(args[0], args[1]);    
+
+            int l = args[0].length();
+            String nombre = args[0].substring(0, l - 4);
+            String extension = args[0].substring(l - 4, l);
+
+            Listar lm =  new Listar(args[0],nombre + "_sort" + extension);   
             lm.writeToFile();
         } catch (Exception e) {
             System.out.println(e.getMessage());

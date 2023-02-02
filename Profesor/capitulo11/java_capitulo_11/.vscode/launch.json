@@ -1,0 +1,124 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+
+        {
+            "type": "java",
+            "name": "Launch Ejercicio3",
+            "request": "launch",
+            "mainClass": "Ejercicio3",
+            "projectName": "java_capitulo_11_45425abc",
+            "args":"data1.dat data2.dat mezcla.dat"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejemplo3",
+            "request": "launch",
+            "mainClass": "Ejemplos.Ejemplo3",
+            "projectName": "java_capitulo_11_45425abc"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejercicio2",
+            "request": "launch",
+            "mainClass": "Ejercicios.Ejercicio2",
+            "projectName": "java_capitulo_11_45425abc"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejercicio1",
+            "request": "launch",
+            "mainClass": "Ejercicios.Ejercicio1",
+            "projectName": "java_capitulo_11_45425abc",
+            "args": "1 500"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejemplo1",
+            "request": "launch",
+            "mainClass": "Ejemplo1",
+            "projectName": "java_capitulo_11_45425abc"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejemplo10",
+            "request": "launch",
+            "mainClass": "Ejemplo10",
+            "projectName": "java_capitulo_11_45425abc"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejemplo11",
+            "request": "launch",
+            "mainClass": "Ejemplo11",
+            "projectName": "java_capitulo_11_45425abc"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejemplo2",
+            "request": "launch",
+            "mainClass": "Ejemplo2",
+            "projectName": "java_capitulo_11_45425abc"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejemplo3",
+            "request": "launch",
+            "mainClass": "Ejemplo3",
+            "projectName": "java_capitulo_11_45425abc"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejemplo4",
+            "request": "launch",
+            "mainClass": "Ejemplo4",
+            "projectName": "java_capitulo_11_45425abc"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejemplo5",
+            "request": "launch",
+            "mainClass": "Ejemplo5",
+            "projectName": "java_capitulo_11_45425abc"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejemplo6",
+            "request": "launch",
+            "mainClass": "Ejemplo6",
+            "projectName": "java_capitulo_11_45425abc"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejemplo7",
+            "request": "launch",
+            "mainClass": "Ejemplo7",
+            "projectName": "java_capitulo_11_45425abc",
+            "args": "hola 100 20"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejemplo8",
+            "request": "launch",
+            "mainClass": "Ejemplo8",
+            "projectName": "java_capitulo_11_45425abc"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejemplo9",
+            "request": "launch",
+            "mainClass": "Ejemplo9",
+            "projectName": "java_capitulo_11_45425abc"
+        }
+    ]
+}

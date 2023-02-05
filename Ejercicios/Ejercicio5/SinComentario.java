@@ -1,6 +1,6 @@
 package Ejercicios.Ejercicio5;
 
-public class Comentario {
+public class SinComentario {
     public static void main(String[] args) {
         
 

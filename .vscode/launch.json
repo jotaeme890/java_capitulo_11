@@ -6,6 +6,22 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Ejemplo6",
+            "request": "launch",
+            "mainClass": "Ejemplos.Ejemplo6",
+            "projectName": "java_capitulo_11_588b24c4",
+            
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejercicio5",
+            "request": "launch",
+            "mainClass": "Ejercicios.Ejercicio5.Ejercicio5",
+            "projectName": "java_capitulo_11_588b24c4",
+            "args": "./Ejercicios/Ejercicio5/Comentario.java ./Ejercicios/Ejercicio5/SinComentario.java"
+        },
+        {
+            "type": "java",
             "name": "Launch Ejercicio6",
             "request": "launch",
             "mainClass": "Ejercicios.Ejercicio6.Ejercicio6",

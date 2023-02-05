@@ -18,21 +18,17 @@ public class Buscador {
 
     public void init(String orig1,String palabra){
         this.palabra = palabra;
-        int i = 0;
 
         try {
             BufferedReader br = new BufferedReader(new FileReader(orig1));
 
             String linea = "";
-            //! A LA LINEA SE LE DA EL VALOR DE LA LINEA LEIDA, Y MIENTRAS NO SE NULL HACE
-            while ((linea = br.readLine()) != null) {
-                //! MIENTRAS HAYA UNA OCURRENCIA DE LA PALABRA, SE VA A DEVOLVER EL VALOR Y SI NO LA HAY VA A DEVOLVER -1
-                while  ((i = linea.indexOf(palabra)) != -1)  {
-                    //! A LINEA SE LE DA EL VALOR DEL .substring(valor de i + longitud de la palabra Y longitud de la linea), ES DECIR LINEA EMPIEZA EN I+ LONGITUD DE PALABRA Y TERMINA EN LA LONGITUD DE LA LINEA
-                    linea = linea.substring(i + palabra.length(), linea.length());
-                    //! SE AUMENTA EL CONTADOR YA QUE SERIA OTRA PALABRA IGUAL
-                    this.cont++;
+
+            while(linea != null){
+                if(linea.contains(palabra)){
+                    cont++;
                 }
+                linea = br.readLine();
             }
 
             br.close();

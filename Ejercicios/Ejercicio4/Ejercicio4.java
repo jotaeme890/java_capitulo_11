@@ -27,7 +27,7 @@ public class Ejercicio4 {
             /*
              * OTRA FORMA PARA AÑADIR _sort.txt A UN ARCHIVO
              * int pos = 0;
-             * String nuevo archivo = ((pos = file.lastInfexOf(".txt"))!= -1? file.substring(0,pos): file) + "_sort.txt";
+             * String nuevo archivo = ((pos=file.lastIndexOf(".txt"))!=-1?file.substring(0, pos):file) + "_sorted.txt";
              * 
              */
 

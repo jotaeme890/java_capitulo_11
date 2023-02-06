@@ -38,7 +38,6 @@ class Ejercicio5 {
       
       while ((lineaOrigen = br.readLine()) != null) {
         
-        int l = lineaOrigen.length();
         lineaDestino = lineaOrigen;
 
         

@@ -40,7 +40,7 @@ class Ejercicio5 {
         
         lineaDestino = lineaOrigen;
 
-        
+        //! COMIENZO DE COMENTARIO DE BLOQUE
         if ((i = lineaOrigen.indexOf("/*")) != -1) {
             lineaDestino = "";
             for(int cont = 0; cont < lineaOrigen.length(); cont++){
@@ -58,6 +58,7 @@ class Ejercicio5 {
                   //! PARA QUE SE SALGA YA QUE SE QUEDARÍA COMENTADA TODA LA LINEA Y NO NOS SERVIRIA
                     break;
                 }
+                //! SI NO ES COMENTARIO DE BLOQUE, SE PASA YA QUE LAS LINEAS DE DENTRO SE QUEDARIAN FUERA
                 else if(!comentarioDeBloque){
                     lineaDestino+=lineaOrigen.charAt(cont);
                 }
@@ -65,7 +66,7 @@ class Ejercicio5 {
             lineaOrigen = lineaDestino;
         }
         
-        // Detecta fin de comentario de bloque 
+        //! FIN DE COMENTARIO DE BLOQUE
         if (comentarioDeBloque && (i = lineaOrigen.indexOf("*/")) != -1) {
             lineaDestino = "";
             for(int cont = 0; cont < lineaOrigen.length(); cont++){

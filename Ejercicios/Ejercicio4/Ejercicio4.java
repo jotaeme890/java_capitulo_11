@@ -23,6 +23,13 @@ public class Ejercicio4 {
             String extension = args[0].substring(l - 4, l);
 
             Listar lm =  new Listar(args[0],nombre + "_sort" + extension);   
+
+            /*
+             * OTRA FORMA PARA AÑADIR _sort.txt A UN ARCHIVO
+             * String nuevo archivo = ((pos = file.lastInfexOf(".txt"))!= -1? file.substring(0,pos): file) + "_sort.txt";
+             * 
+             */
+
             lm.writeToFile();
         } catch (Exception e) {
             System.out.println(e.getMessage());

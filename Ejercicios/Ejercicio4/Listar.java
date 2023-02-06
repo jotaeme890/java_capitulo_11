@@ -33,11 +33,8 @@ public class Listar {
 
             String linea1 = br1.readLine();
 
-            while((linea1!=null)){
-                if(linea1!=null){
-                    n.add(linea1);
-                    linea1 = br1.readLine();
-                }
+            while(((linea1 = br1.readLine())!=null)){
+                n.add(linea1);
             }
             br1.close();
         } catch (Exception e) {

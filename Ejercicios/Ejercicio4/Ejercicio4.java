@@ -13,8 +13,8 @@ package Ejercicios.Ejercicio4;
 
 public class Ejercicio4 {
     public static void main(String[] args) {
-        if (args.length != 2) {
-            System.out.println("Debe tener 2 argumentos");
+        if (args.length != 1) {
+            System.out.println("Debe tener 1 argumento");
             System.exit(-1);
         }
         try {

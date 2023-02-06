@@ -23,12 +23,13 @@ public class Buscador {
             BufferedReader br = new BufferedReader(new FileReader(orig1));
 
             String linea = "";
+            int i = 0;
 
-            while(linea != null){
-                if(linea.contains(palabra)){
+            while((linea = br.readLine()) != null){
+                while ((i = linea.indexOf(palabra)) != -1) {
+                    linea = linea.substring(i + palabra.length(), linea.length());
                     cont++;
                 }
-                linea = br.readLine();
             }
 
             br.close();

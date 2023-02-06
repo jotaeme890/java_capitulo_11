@@ -44,15 +44,18 @@ class Ejercicio5 {
         if ((i = lineaOrigen.indexOf("/*")) != -1) {
             lineaDestino = "";
             for(int cont = 0; cont < lineaOrigen.length(); cont++){
+                //! LO QUE SERIA EL PRINCIPIO DEL COMENTARIO DE BLOQUE
                 if(lineaOrigen.charAt(cont)=='/' && lineaOrigen.charAt(cont+1)=='*'){
                     comentarioDeBloque=true;
                     cont++;
                 }
+                //! LO QUE SERIA EL FINAL DEL COMENTARIO DE BLOQUE
                 else if(lineaOrigen.charAt(cont)=='*' && lineaOrigen.charAt(cont+1)=='/'){
                     comentarioDeBloque=false;
                     cont++;
                 }
                 else if(!comentarioDeBloque && lineaOrigen.charAt(cont)=='/' && lineaOrigen.charAt(cont)=='/'){
+                  //! PARA QUE SE SALGA YA QUE SE QUEDARÍA COMENTADA TODA LA LINEA Y NO NOS SERVIRIA
                     break;
                 }
                 else if(!comentarioDeBloque){
